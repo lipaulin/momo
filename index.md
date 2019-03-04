@@ -18,7 +18,7 @@ site.posts | group_by_exp:"post", "post.date | date: '%F'" %}
 {% if day_post == nil %}
 {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'placeholder.jpg'" | first%}
 <div class="col d3 card">
-<img src="{{ thumbnail.path }}" class="_blur _width100 " height="100px">
+<img src="{{ site.baseurl }}{{ thumbnail.path }}" class="_blur _width100 " height="100px">
 <div class="-content _alignCenter">
 Japan
 <p>
@@ -30,12 +30,12 @@ Japan
 {% else %}
 <div class="col d3 card">
 {% assign linked_post =  day_post.items | first %}
-<a href="{{ linked_post.url }}">
+<a href="{{ site.baseurl }}{{ linked_post.url }}">
 {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.path contains fmt_date" | first%}
 {% if thumbnail == nil %}
     {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'default.jpg'" | first%}
 {% endif %}
-<img src="{{ thumbnail.path }}" class="_width100" height="100px">
+<img src="{{ site.baseurl }}{{ thumbnail.path }}" class="_width100" height="100px">
 </a>
 <div class="-content _alignCenter">
 {% assign location = linked_post.location %}

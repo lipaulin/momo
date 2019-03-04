@@ -3,19 +3,19 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-	<link rel="stylesheet" type="text/css" href="/assets/css/beauter.min.css"/>
-	<link rel="stylesheet" type="text/css" href="/assets/css/momo.css"/>
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/beauter.min.css"/>
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/momo.css"/>
 </head>
 
 <body>
 <ul class="topnav _pink -fixed " id="myTopnav">
   <li>
     <a href="/" class="brand">
-      <img src="/assets/img/peach.svg" style="width:20px">
+      <img src="{{ site.baseurl }}/assets/img/peach.svg" style="width:20px">
       もも
     </a>
   </li>
-  <li><a href="/about/">Préparation</a>
+  <li><a href="{{ site.baseurl }}/about/">Préparation</a>
   </li>
 
   <li class="-icon">
@@ -32,7 +32,7 @@ background: linear-gradient(pink, white);
   </h1>
   </div>
 {{ content }}
-<script src="/assets/js/beauter.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/beauter.min.js"></script>
 </body>
 
 </html>
