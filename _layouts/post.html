@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% assign image_folder = page.date | date: '%F' %}
+{% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.path contains image_folder" | first%}
+{% if thumbnail == nil %}
+    {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'default.jpg'" | first%}
+{% endif %}
+
+
+<div class="bg-parallax" style="background-image: url('{{ thumbnail.path }}')">
+</div>
+
+<div class="container _high">
+  <h2>{{ page.location }} <small>{{ page.date | date: "%F" }}</small></h2>
+  {{ content }}
+  <p>もも</p>
+  <div class="row">      
+      {% assign image_files = site.static_files | where: "image", true | where_exp:"item", "item.path contains image_folder" %}
+      {% for myimage in image_files %}      
+          <div class="col m6">
+            <img class="modalimg -thumb" id="imgu{{forloop.index}}" src="{{ myimage.path }}" onclick="openimg('imgu{{forloop.index}}','imgb{{forloop.index}}')">
+            <div id="imgb{{forloop.index}}" class="modal">
+              <span class="-close">✖</span>
+              <img class="modal-content">
+              <div class="caption"></div>
+            </div>
+          </div>
+      {% endfor %}
+  </div>
+</div>

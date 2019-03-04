@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+	<link rel="stylesheet" type="text/css" href="/assets/css/beauter.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/assets/css/momo.css"/>
+</head>
+
+<body>
+<ul class="topnav _pink -fixed " id="myTopnav">
+  <li>
+    <a href="/" class="brand">
+      <img src="/assets/img/peach.svg" style="width:20px">
+      もも
+    </a>
+  </li>
+  <li><a href="/about/">Préparation</a>
+  </li>
+
+  <li class="-icon">
+    <a href="javascript:void(0);" onclick="topnav('myTopnav')">☰</a>
+  </li>
+</ul>
+<div class="jumbo " style=" margin-top:56px;
+background: white; /* For browsers that do not support gradients */
+background: linear-gradient(pink, white); 
+">
+  <h1>{{ page.title }}
+  <br>
+  <small>Pêche va au japon</small>
+  </h1>
+  </div>
+{{ content }}
+<script src="/assets/js/beauter.min.js"></script>
+</body>
+
+</html>
