@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135642575-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-135642575-1');
   </script>
 
@@ -14,6 +13,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/beauter.min.css"/>
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/momo.css"/>
+  <title>もも :: {{ page.title }}</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
       もも
     </a>
   </li>
-  <li><a href="{{ site.baseurl }}/about/">Préparation</a>
+  <li><a href="{{ site.baseurl }}/calendar/">Calendar</a>
   </li>
 
   <li class="-icon">
@@ -42,6 +42,10 @@ background: linear-gradient(pink, white);
   </div>
 {{ content }}
 <script src="{{ site.baseurl }}/assets/js/beauter.min.js"></script>
+
+<script>
+    opentab('content_fr');
+</script>
 </body>
 
 </html>

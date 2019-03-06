@@ -1,0 +1,29 @@
+{% assign img_class = '' %}
+{% if include.thumbnail_path == nil%}
+    {% assign placeholder = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'placeholder.jpg'" | first %}
+    {% assign thumbnail_path = placeholder.path %}
+    {% assign img_class = ' _blur' %}
+{% else %}
+    {% assign thumbnail_path = include.thumbnail_path %}
+{% endif %}
+<div class="col d4 card">
+    {% if include.note == 'nouveau' %}
+        <p class="note _bc-pink">Nouveau</p>
+    {% elsif include.note == 'changement' %}
+        <p class="note _bc-warning">Changement</p>
+    {% endif %}
+
+    {% if include.url != nil %}<a href="{{ site.baseurl }}{{ include.url }}">{% endif %}
+    <img src="{{ site.baseurl }}{{ thumbnail_path }}" class="_width100 {{ img_class }}" height="100px">
+    {% if include.url != nil %}</a>{% endif %}
+
+    <div class="-content _alignCenter">
+    <p>
+        <strong>{{ include.title }}</strong>
+        <br>
+        <small>{{ include.date }}</small>
+        <br>
+        <small>{{ include.location }}</small>
+    </p>
+    </div>
+</div>

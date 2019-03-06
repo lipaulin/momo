@@ -8,7 +8,6 @@ layout: default
     {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'default.jpg'" | first%}
 {% endif %}
 
-
 <div class="bg-parallax" style="background-image: url('{{ site.baseurl }}{{ thumbnail.path }}')">
 </div>
 
@@ -18,15 +17,10 @@ layout: default
   <p>もも</p>
   <div class="row">      
       {% assign image_files = site.static_files | where: "image", true | where_exp:"item", "item.path contains image_folder" %}
-      {% for myimage in image_files %}      
-          <div class="col m6">
-            <img class="modalimg -thumb" id="imgu{{forloop.index}}" src="{{ site.baseurl }}{{ myimage.path }}" onclick="openimg('imgu{{forloop.index}}','imgb{{forloop.index}}')">
-            <div id="imgb{{forloop.index}}" class="modal">
-              <span class="-close">✖</span>
-              <img class="modal-content">
-              <div class="caption"></div>
+      {% for myimage in image_files %}
+          <div class="col d6">
+              <img class="-thumb" src="{{ site.baseurl }}{{ myimage.path }}">     
             </div>
-          </div>
       {% endfor %}
   </div>
 </div>

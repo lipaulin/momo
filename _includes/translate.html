@@ -1,0 +1,17 @@
+<div class="tab">
+    <button class="tablinks" onclick="opentab('content_fr')">Fr</button>
+    <button class="tablinks" onclick="opentab('content_en')">En</button>
+    <button class="tablinks" onclick="opentab('content_jp')">Jp</button>
+</div>
+
+<div id="content_fr" class="tabcontent">
+    {{ content_fr | markdownify }}
+</div>
+
+<div id="content_en" class="tabcontent">
+    {{ content_en | markdownify }}
+</div>
+
+<div id="content_jp" class="tabcontent">
+    {{ content_jp | markdownify }}
+</div>

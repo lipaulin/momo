@@ -1,0 +1,11 @@
+{% assign fmt_date = include.post.date | date:"%F" %}
+{% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.path contains fmt_date" | first%}
+{% if thumbnail == nil %}
+    {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'default.jpg'" | first%}
+{% endif %}
+{% assign location = include.post.location %}
+{% if location == nil %}
+    {% assign location = "Japan" %}
+{% endif %}
+
+{% include functions/card.html url=include.post.url thumbnail_path=thumbnail.path location=location title=include.post.title date=fmt_date note=include.note %}
