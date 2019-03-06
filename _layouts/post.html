@@ -7,20 +7,47 @@ layout: default
 {% if thumbnail == nil %}
     {% assign thumbnail = site.static_files | where: "image", true | where_exp:"item", "item.name  == 'default.jpg'" | first%}
 {% endif %}
+{% assign image_files = site.static_files | where: "image", true | where_exp:"item", "item.path contains image_folder" %}
 
-<div class="bg-parallax" style="background-image: url('{{ site.baseurl }}{{ thumbnail.path }}')">
+<img src="{{ site.baseurl }}{{ thumbnail.path }}" class="img-fluid" style="width: 100%;
+max-height: 200px;
+object-fit: cover;">
+<h3>{{ page.location }} <small>{{ page.date | date: "%F" }}</small></h3>
+{{ content }}
+<p>もも</p>
+<div class="row">     
+  {% for myimage in image_files %}
+  <div class="col-md-6 col-lg-4">
+    <a href="#exampleModal" data-toggle="modal" data-slide-to="{{ forloop.index}}">
+      <img class="img-fluid img-thumbnail mx-auto d-block" src="{{ site.baseurl }}{{ myimage.path }}" style="object-fit: cover; max-height: 200px">  
+    </a>
+  </div>
+  {% endfor %}
 </div>
-
-<div class="container _high">
-  <h2>{{ page.location }} <small>{{ page.date | date: "%F" }}</small></h2>
-  {{ content }}
-  <p>もも</p>
-  <div class="row">      
-      {% assign image_files = site.static_files | where: "image", true | where_exp:"item", "item.path contains image_folder" %}
-      {% for myimage in image_files %}
-          <div class="col d6">
-              <img class="-thumb" src="{{ site.baseurl }}{{ myimage.path }}">     
-            </div>
-      {% endfor %}
+  
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+          <div class="carousel-inner">  
+            {% for myimage in image_files %}
+              <div class="carousel-item {% if forloop.index == 1 %}active{% endif %}">
+                <img src="{{ site.baseurl }}{{ myimage.path }}" class="d-block w-100">
+              </div>
+            {% endfor %}
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

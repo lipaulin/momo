@@ -9,43 +9,41 @@
     gtag('config', 'UA-135642575-1');
   </script>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/beauter.min.css"/>
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/momo.css"/>
-  <title>もも :: {{ page.title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-ciphE0NCAlD2/N6NUApXAN2dAs/vcSAOTzyE202jJx3oS8n4tAQezRgnlHqcJ59C" crossorigin="anonymous">
+  <title>もも : {{ page.title }}</title>
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/peach.png">
 </head>
 
 <body>
-<ul class="topnav _pink -fixed " id="myTopnav">
-  <li>
-    <a href="{{ site.baseurl }}/" class="brand">
-      <img src="{{ site.baseurl }}/assets/img/peach.svg" style="width:20px">
-      もも
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="{{ site.baseurl }}/">
+      <img src="{{ site.baseurl }}/assets/img/peach.png" width="35" height="35" class="d-inline-block align-center img-thumbnail" alt="">
+      {{ site.title }}
     </a>
-  </li>
-  <li><a href="{{ site.baseurl }}/calendar/">Calendar</a>
-  </li>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{{ site.baseurl }}/calendar/">Calendar</a>
+      </li>
+    </ul>
+  </div>  
+</nav>
 
-  <li class="-icon">
-    <a href="javascript:void(0);" onclick="topnav('myTopnav')">☰</a>
-  </li>
-</ul>
-<div class="jumbo " style=" margin-top:56px;
-background: white; /* For browsers that do not support gradients */
-background: linear-gradient(pink, white); 
-">
-  <h1>{{ page.title }}
-  <br>
-  <small>Pêche va au japon</small>
-  </h1>
-  </div>
-{{ content }}
-<script src="{{ site.baseurl }}/assets/js/beauter.min.js"></script>
+<div class="" style="background: white; background: linear-gradient(#EB6864, white);">
+  <h1 class="display-5 text-center">{{ page.title }}</h1>
+  <p class="lead text-center">Pêche va au japon.</p>
+</div>
 
-<script>
-    opentab('content_fr');
-</script>
+<div class="container">
+  {{ content }}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
-
 </html>

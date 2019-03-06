@@ -4,8 +4,8 @@ title: もも
 ---
 
 
-<div class="container">
-{% assign intro_post = site.posts.first %}
+<div class="row">
+{% assign intro_post = site.posts.last %}
 {% include functions/card_post.html post=intro_post note=nil %}
 
 {% assign postsByDay = site.posts | group_by_exp:"post", "post.date | date: '%F'" %}
@@ -15,7 +15,7 @@ title: もも
 {% assign day_post = postsByDay | where: "name", fmt_date | first %}
 
 {% if day_post == nil %}
-    {% include functions/card.html url=nil thumbnail_path=nil location='Japan' title=nil date=fmt_date note=nil %}
+    {% include functions/card.html url=nil thumbnail_path=nil location='???' title='???' date=fmt_date note=nil %}
 {% else %}
     {% assign linked_post =  day_post.items | first %}
     {% include functions/card_post.html post=linked_post note=nil %}

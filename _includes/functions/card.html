@@ -6,24 +6,27 @@
 {% else %}
     {% assign thumbnail_path = include.thumbnail_path %}
 {% endif %}
-<div class="col d4 card">
-    {% if include.note == 'nouveau' %}
-        <p class="note _bc-pink">Nouveau</p>
-    {% elsif include.note == 'changement' %}
-        <p class="note _bc-warning">Changement</p>
-    {% endif %}
 
-    {% if include.url != nil %}<a href="{{ site.baseurl }}{{ include.url }}">{% endif %}
-    <img src="{{ site.baseurl }}{{ thumbnail_path }}" class="_width100 {{ img_class }}" height="100px">
-    {% if include.url != nil %}</a>{% endif %}
+{% if include.note == 'nouveau' %}
+    {% capture badge %}<span class="badge badge-pill badge-primary float-right">Nouveau</span>{% endcapture %}
+{% elsif include.note == 'changement' %}
+    {% capture badge %}<span class="badge badge-pill badge-warning float-right">Mis à jour</span>{% endcapture %}
+{% endif %}
 
-    <div class="-content _alignCenter">
-    <p>
-        <strong>{{ include.title }}</strong>
-        <br>
-        <small>{{ include.date }}</small>
-        <br>
-        <small>{{ include.location }}</small>
-    </p>
+<div class="col-md-6 col-lg-4" style="margin-bottom: 1em">
+    <div class="card">
+        {% if include.url != nil %}<a href="{{ site.baseurl }}{{ include.url }}">{% endif %}
+        <img src="{{ site.baseurl }}{{ thumbnail_path }}" class="card-img-top" style="object-fit: cover; max-height: 200px">
+        {% if include.url != nil %}</a>{% endif %}
+        <div class="card-body">
+            <p class="card-text">
+                <strong>{{ include.title }}</strong>
+                {{ badge }}
+                <br>
+                <small>{{ include.date }}</small>
+                <br>
+                <small>{{ include.location }}</small>
+            </p>
+        </div>
     </div>
 </div>

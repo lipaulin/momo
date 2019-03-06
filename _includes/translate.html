@@ -1,17 +1,23 @@
-<div class="tab">
-    <button class="tablinks" onclick="opentab('content_fr')">Fr</button>
-    <button class="tablinks" onclick="opentab('content_en')">En</button>
-    <button class="tablinks" onclick="opentab('content_jp')">Jp</button>
-</div>
 
-<div id="content_fr" class="tabcontent">
-    {{ content_fr | markdownify }}
-</div>
-
-<div id="content_en" class="tabcontent">
-    {{ content_en | markdownify }}
-</div>
-
-<div id="content_jp" class="tabcontent">
-    {{ content_jp | markdownify }}
+<ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+<li class="nav-item">
+    <a class="nav-link {% if content_fr == nil %}disabled{% endif %} active" id="pills-fr-tab" data-toggle="pill" href="#pills-fr" role="tab" aria-controls="pills-fr" aria-selected="true">
+        <img src="{{ site.baseurl }}/assets/img/fr.svg" width="30" class="img-fluid">
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link {% if content_en == nil %}disabled{% endif %}" id="pills-en-tab" data-toggle="pill" href="#pills-en" role="tab" aria-controls="pills-en" aria-selected="false">
+        <img src="{{ site.baseurl }}/assets/img/en.svg" width="30" class="img-fluid">
+    </a>
+</li>
+<li class="nav-item">
+    <a class="nav-link {% if content_jp == nil %}disabled{% endif %}" id="pills-jp-tab" data-toggle="pill" href="#pills-jp" role="tab" aria-controls="pills-jp" aria-selected="false">
+        <img src="{{ site.baseurl }}/assets/img/jp.svg" width="30" class="img-fluid">
+    </a>
+</li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-fr" role="tabpanel" aria-labelledby="pills-fr-tab">{{ content_fr | markdownify }}</div>
+    <div class="tab-pane fade" id="pills-en" role="tabpanel" aria-labelledby="pills-en-tab">{{ content_en | markdownify }}</div>
+    <div class="tab-pane fade" id="pills-jp" role="tabpanel" aria-labelledby="pills-jp-tab">{{ content_jp | markdownify }}</div>
 </div>
