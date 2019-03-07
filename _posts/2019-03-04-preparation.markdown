@@ -12,7 +12,7 @@ Bonjour Lise,
 Ton papa et ta maman m'ont dit qu'ils vont au Japon dans une semaine!
 
 Tu sais, ils aimeraient beaucoup t'emmener mais tu es encore trop petite et puis ils ne connaissent pas assez bien le Japon. Alors tu as eu une super idée: 
-Ils vont m'emmener et tous les trois nous allons bien regarder, bien t'imaginer là bas. Comme ça la prochaine fois, tu pourras venir avec nous et Violette!
+Ils vont m'emmener et tous les trois nous allons bien regarder et bien t'imaginer là bas. Comme ça la prochaine fois, tu pourras venir avec nous et Violette!
 
 Ne t'inquiete pas, je vais bien les surveiller pour qu'ils n'oublient rien. je vais revenir en sachant ce que tu mangeras, là ou tu dormiras et tout ce que tu vas visiter!
 
