@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Le grand voyage"
+location: Lyon, Osaka
+date:   2019-03-11 09:12:24 +0100
+---
+
+{% capture content_fr %}
+Bonjour Lise,
+
+Aujourd'hui nous sommes partis!
+
+Ton papa, ta maman et moi nous nous sommes levés tôt pour te faire un dernier câlin et comme ça nous sommes partis avec ton sourire dans la tête!
+Quand tu viendras, nous prendrons le métro comme pour aller chez nounou, mais ce matin nous avons pris la voiture.
+Il faut arriver avec beaucoup d'avance à l'aeroport donc c'est un peu long d'attendre. Je me suis ennuyée un petit peu, donc j'ai dit à papa de prendre pleins de jouets pour toi.
+
+Après, nous avons pris un premier avion. ça bougeait beaucoup, on se serait cru dans un manège! Papa et maman étaient un peu inquiet parce que l'avion est parti en retard, on avait peur que le deuxieme ne nous attende pas.
+Une fois en Allemagne, il a meme fallu courir comme des fous dans les couloirs! Tu sais, je suis pas sur qu'on y serait arrivé avec la poussette mais c'est sur qu'en te voyant, les gens auraient fait attendre l'avion pour que tu puisses monter dedans.
+
+Le deuxieme avion était énorme! et il y avait pleins de japonais dedans! 
+Par contre, je suis désolé mais je n'ai pas vu d'enfants donc je sais pas trop comment ça fonctionnera avec toi. Papa et maman veut pas que je te le dise, mais tu peux regarder pleins de dessins animés!
+On a mangé, on a dormi, on a remangé et on est arrivés!
+
+On a eu une mauvaise surprise à Osaka: nos valises ne courent pas aussi vite que nous donc elles sont encore en Allemegne, un autre avion les emmenent demain ou apres demain. Là j'ai été tres clair avec mamam, avec toi l'indispensable doit etre dans ton sac à dos hibou: 3 ou 4 tchoupi, au moins 2 doudous et pleins de sucettes. Ne t'inquiete pas, je m'occupe de tout
+
+Fais une bise à Violette de ma part,
+{% endcapture %}
+
+{% capture content_en %}
+Hello Lise,
+
+Today we left!
+
+Your dad, your mom and I got up early to give you one last hug and so we left with your smile in your head!
+When you come, we will take the subway like to go to nanny but this morning we took the car.
+You have to go very early at the airport so it's a bit long to wait. I got bored a little bit, so I told Dad to take a lot of toys for you.
+
+After, we took a first plane. it moved a lot, It felt like we were in a carousel! Mom and Dad were a little worried because the plane was late, we were afraid that the second one would not wait for us.
+Once in Germany, he even had to run like crazies in the corridors! You know, I'm not sure that we would have managed with the stroller but people would have made the plane wait for you to get in.
+
+The second plane was huge! and there were lots of japanese in it!
+I'm sorry but I have not seen any children so I do not know how it will work with you. Dad and mom do not want me to tell you, but you can watch a lot of cartoons!
+We ate, we slept, we ate again and we were in japan!
+
+We had a bad surprise in Osaka: our bags do not run as fast as us so they are still in Germany, another plane takes them tomorrow or after tomorrow. There I was very clear with mamam, with you the essential must be in your backpack owl: 3 or 4 tchoupi, at least 2 doudous and a lot of pacifiers. Do not worry, I take care of everything
+
+Kiss Violette for me,
+{% endcapture %}
+
+{% capture content_jp %}
+こんにちは。
+
+今日は出発しました！
+
+あなたのお父さん、あなたのお母さんと私はあなたに最後の抱擁をするために早起きしたので、私たちはあなたの頭の中にあなたの笑顔を残しました！
+あなたが来るとき、私たちは地下鉄に乗って乳母に行くようにするつもりだが、今朝我々は車に乗った。
+あなたは空港に早くから行かなければならないので待つのは少し長いです。私は少し退屈したので、私はお父さんにたくさんのおもちゃを持っていくように言いました。
+
+その後、私たちは最初の飛行機に乗りました。それは私たちがカルーセルに入っているように感じました！お母さんとお父さんは飛行機が遅かったので少し心配していました、私たちは2番目のものが私たちを待っていないことを恐れていました。
+かつてドイツにいたとき、彼は廊下でクレイジーのように走らなければなりませんでした！あなたが知っている、私たちはベビーカーで管理していただろうと確信していないが、人々は飛行機があなたが入るのを待たせていただろう。
+
+2番目の飛行機は巨大でした！それにたくさんの日本語がありました！
+すみませんが、私は子供を見たことがないので、それがあなたとどのように機能するかわかりません。お父さんとお母さんは私にあなたに話してほしくないが、あなたは漫画をたくさん見ることができる！
+私たちは食べて、寝て、また食べて、日本にいました！
+
+大阪では驚きました。私たちのバッグは私たちほど速くは走らないので、まだドイツにいるので、明日か明後日に別の飛行機で連れて行きます。そこに私はママムと非常にはっきりしていました、あなたと一緒に本質的にあなたのバックパックフクロウになければなりません：3または4 tchoupi、少なくとも2つのdoudousとたくさんのおしゃぶり。心配しないで、私はすべての世話をする
+
+Violetteにキスして
+{% endcapture %}
+
+{% include translate.html %}
