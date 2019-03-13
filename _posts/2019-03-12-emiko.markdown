@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Itsu et Emiko"
+location: Kyoto
+date:   2019-03-12 09:12:24 +0100
+---
+
+{% capture content_fr %}
+Salut copine!
+
+J'ai rencontré Itsu et Emiko, enfin! Ils sont vraiment très gentils et on rigole bien.
+
+A midi, on est allé manger un Okonomiyaki avec eux dans un restaurant ou les serveurs font tout devant nous. c'est rigolo mais il faut faire attention parce que la table est très très chaude, tu pourrais te bruler. Maman m'a mis bien en hauteur comme ça j'étais protégé et je pouvais tout bien voir. Tout le monde rigolait beaucoup.
+
+Après, on est allé acheter des habits dans le magasin préféré d'Itsu, et on a fait du shopping tout ensemble.
+
+Tu vas adorer la maison d'itsu et emiko. C'est tout propre, et il faut enlever ses chaussures a l'interieur. Ils ont leurs chaussures dans l'entrée et apres c'est chaussons obligatoires! sauf dans la chambre de papa maman ou meme les chaussons sont interdits.
+
+Itsu et emiko ont achetés des brosses à dents et ils ont dessinés une carte du quartier avec leurs magasins préférés! ils sont vraiment sympas!
+Vu que papa et maman ne connaissent pas le japonais, il y a pleins de petites etiquettes pour nous expliquer où sont les choses, ou comment fonctionnent leurs appareils. On est allés faire des courses tous ensemble pour cuisiner un super bon plat japonais, je me suis régalée.
+
+Maman était super contente, ils ont une kotatsu! c'est une table avec une couverture chauffante, c'est tout doux!
+
+A bientôt copine!
+{% endcapture %}
+
+{% capture content_en %}
+Hi my friend!
+
+I met Itsu and Emiko, finally! They are really nice and we laugh a lot.
+
+At noon, we went to eat an Okonomiyaki with them in a restaurant where the waiters do everything in front of us. it's funny but you have to be careful because the table is very hot, you could get burned. Mom put me high so I was protected and I could see everything. Everyone was laughing a lot.
+
+Afterwards, we went to buy clothes in Itsu's favorite store, and we went shopping together.
+
+You would love the house of itsu and emiko. It's very clean, and you have to take off your shoes inside. They have their shoes in the entrance and after it's mandatory slippers! except in bedrooms where even slippers are forbidden.
+
+Itsu and emiko bought toothbrushes and they drew a neighborhood map with their favorite shops! they are really nice!
+Since mom and dad do not know Japanese, there are lots of little labels to tell us where things are, or how their devices work. We went shopping all together to cook a great Japanese dish, I loved it.
+
+Mom was super happy, they have a kotatsu! it's a table with a hot blanket, it's so warm!
+
+See you soon my friend!
+{% endcapture %}
+
+{% capture content_jp %}
+こんにちは私の友人！
+
+いとつとえみこにやっと会いました！彼らは本当に素敵で、私たちはとても笑います。
+
+正午、私たちはレストランでお好み焼きを一緒に食べに行きました。それは面白いですが、テーブルは非常に熱いので、あなたはやけどする可能性があるので注意しなければなりません。お母さんは私を高くしていたので私は保護されていて私はすべてを見ることができた。みんながとても笑っていました。
+
+その後、私たちは愛津のお気に入りの店で服を買いに行き、そして一緒に買い物に行きました。
+
+あなたはその家とエミコの家を好きになるでしょう。それはとてもきれいです、そしてあなたはあなたの中の靴を脱がなければなりません。彼らは入り口とそれが必須のスリッパの後に彼らの靴を持っています！スリッパでさえも禁止されている寝室を除いて。
+
+いとうとえみこが歯ブラシを買い、お気に入りのお店で近所の地図を描きました！彼らは本当に素敵です！
+お母さんとお父さんは日本語がわからないので、物事がどこにあるのか、またはそれらのデバイスがどのように機能するのかを示すためのラベルがたくさんあります。私たちは一緒に買い物に行って素晴らしい日本料理を作りました、私はそれが大好きでした。
+
+お母さんはとても幸せでした、彼らはこたつを持っています！それは熱い毛布があるテーブルです、それはとても暖かいです！
+
+じゃあ、すぐに私の友人に会いましょう！
+{% endcapture %}
+
+{% include translate.html %}
