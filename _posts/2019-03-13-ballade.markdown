@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "1ere ballade"
+location: Kyoto
+date:   2019-03-13 09:12:24 +0100
+---
+
+{% capture content_fr %}
+Bonjour lise,
+
+J'ai super bien dormi! Il fait très froid chez Itsu and Emiko mais on dort sous pleins de couvertures douces et chaudes, c'est super. Je voulais rester couchée au chaud toute la journée!
+
+Aujourd'hui, je suis allée faire une jolie ballade dans le quartier avec Papa et Maman. 
+
+Itsu et Emiko nous ont montré un joli parc juste derriere leur maison. ils ont dit que quand tu viendras tu pourras aller y jouer.
+
+On a beaucoup marché pour aller voir un petit lac très beau. Tu te serais fait pleins de copains, il y avait des enfants qui mangeaient tous ensemble au bord du lac. C'est rigolo ici, les enfants ont tous la même casquette suivant leur âge: rose, orange ou verte ou même rouge!
+
+Papa et maman ont dit qu'ils t'emmeneront voir les canards sur ce lac et surtout les carpes qui viennent nous dire "ohayo" ou " j'ai faim!". Après on est allé voir des temples. C'est joli mais ça fait un peu peur, toutes ces statues dans la foret.
+
+On a recu nos valises quand on est rentrés, et on a donné tous nos cadeaux!!! tout le monde rigolait beaucoup, et ils ont même affiché ton dessin sur le mur!
+
+Je te fais pleins de bisous!
+{% endcapture %}
+
+{% capture content_jp %}
+こんにちは。
+
+私はとてもよく眠りました！ ItsuとEmikoはとても寒いですが、暖かい毛布と暖かい毛布でいっぱい眠っています、素晴らしいです。一日中暖かく過ごしたいです。
+
+今日は、お父さんとお母さんと近所を散歩しに行きました。
+
+ItsuとEmikoは彼らの家のすぐ後ろに素敵な公園を見せてくれました。彼らはあなたが来たらあなたは行って遊べると言った。
+
+私たちは美しい小さな湖を見るためにたくさん歩いた。あなたはたくさんの友達を作ったでしょう、湖のそばで一緒に食べた子供たちがいました。それはここでは面白いです、子供たちはすべて自分の年齢に応じて同じキャップを持っている：ピンク、オレンジ、または緑、さらには赤！
+
+パパとママは、この湖のアヒル、特に「おはよう」や「おなかがすいた」と言ってくる鯉を見るために連れて行ってくれると言っています。寺を見に行った後。それはきれいですが、それは少し怖いです、森の中のすべてのこれらの彫像。
+
+我々が戻ったときに我々は我々のバッグを受け取った、そして我々はすべての我々の贈り物を与えた！みんなたくさん笑っていて、彼らは壁にあなたの絵を載せさえしました！
+
+私はあなたをキスでいっぱいにします！
+{% endcapture %}
+
+{% include translate.html %}
