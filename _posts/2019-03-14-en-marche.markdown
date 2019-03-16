@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "En marche!"
+location: Kyoto
+date:   2019-03-14 09:12:24 +0100
+---
+
+{% capture content_fr %}
+Bonjour Lise,
+
+Je suis très fatiguée, on a beaucoup beaucoup beaucoup marché aujourd'hui! Avec papa et maman, on a remonté le bord de la rivière pour aller de chez Itsu et Emiko à la gare. Je nous imaginais toutes les deux dans la poussette
+On a marché pendant 3 heures! on rigole tous beacoup avec emiko qui n'en revient pas, on dit en rigolant 'à pieds !!' tout le temps.
+
+J'ai vu un petit faucon sur le chemin, qui jouait à tomber pour à peine toucher l'eau avant de remonter. Papa a dit qu'il tournait autour de nous pour nous manger, j'ai pas trouvé ça drôle, ça m'a fait peur.
+
+Papa et maman parlent anglais entre eux maintenant, ils sont un peu bêtes.
+
+Quand on est enfin arrivés à la gare, on a mangé dans un super restaurant. Il y avait du monde alors on est restés assis devant, en attendant qu'ils viennent nous chercher. Ca valait le coup, c'etait super bon!
+On a fait du shopping dans la gare, c'est immense il y a 11 etages!! avec un etage que de jouets, tu vas adorer.
+
+Après on est aller voir Emiko au musée du manga qui nous a fait un grand sourire. Je crois qu'elle était contente de nous voir.
+
+On est aller dans le même restaurant ou papa avait emmener maman pour ses 30 ans. c'était incroyable, on a revu le même serveur et on était même assis à la même table! papa et maman était tout émus d'y revenir avec Itsu et Emiko.
+
+Ensuite on est allé manger des desserts! dans un café avec un énorme poisson au plafond. Je n'ai pas compris pourquoi il était là. Et puis il était tard, je crois que je me suis endormie dans le taxi.
+{% endcapture %}
+
+{% capture content_en %}
+{% endcapture %}
+
+{% capture content_jp %}
+こんにちは。
+
+私はとても疲れています、私たちは今日たくさん歩いてきました！お父さんとお母さんと一緒に、私たちはいつとえみこから駅まで行くために川を上った。私はベビーカーの両方を想像した
+３時間歩いた！戻ってこないemikoとよく笑います、「徒歩で笑って」と言います。ずっと。
+
+私は途中で少し鷹を見ました。お父さんは彼が私たちの周りにいて私たちを食べていると言った、私はそれがおかしいとは思わなかった、それは私を怖がらせた。
+
+ママとパパは今お互いに英語を話します、彼らは少しばかげています。
+
+我々がついに駅に着いたとき、我々は素晴らしいレストランで食べた。人々がいたので私たちは目の前に座って、彼らが来て私たちを連れてくるのを待っていました。それは価値があった、それは超良かったです！
+我々は駅で買い物に行った、それは１１階があることは巨大である！床だけのおもちゃで、あなたは好きになるでしょう。
+
+私たちが漫画博物館でエミコに会いに行った後、私たちはとても笑顔になりました。彼女は私たちに会えてうれしかったと思います。
+
+私たちは父が30歳の誕生日のためにお母さんを連れていかなければならなかった同じレストランに行きました。それは素晴らしかった、我々は同じウェイターを見ました、そして我々は同じテーブルに座ってさえいました！ママとパパは、イツとエミコと一緒に戻ってくることに興奮していました。
+
+それから私たちはデザートを食べに行きました！天井に大きな魚がいるカフェで。なぜ彼がそこにいたのかわかりませんでした。それから遅くなった、私はタクシーで眠りに落ちたと思う。。
+{% endcapture %}
+
+{% include translate.html %}
